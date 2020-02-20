@@ -12,4 +12,3 @@ senapan=$((10#26-$sepatu))
 #echo $senapan
 coba1=`echo "$arg" | caesar $senapan`  
 mv $args $coba1.txt
-
