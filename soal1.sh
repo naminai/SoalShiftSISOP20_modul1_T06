@@ -21,5 +21,5 @@ echo "Produk dari State Illinois dengan profit paling sedikit adalah: "
 productgagal=`awk -F, -v c="$stationpurabaya" 'NR>1 {if(match($11, c))arr[$17]+=$21}END{for (i in arr) printf "%f\t%s\n", arr[i], i}' Sample-Superstore.csv | sort -n | awk -F, 'FNR <11 {printf "%s\n", $1}' | cut -f2- ` 
 echo -e "$productgagal\n"
 
-#awk -F, -v b="Texas" 'NR>1 {if(match($11, b))arr[$17]+=$21}END{for (i in arr) printf "%f\t%s\n" ,arr[i] ,i}' Sample-Superstore.csv | sort -n
+
 
