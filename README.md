@@ -22,4 +22,4 @@ Kelompok T06
 ---
 
 ## Soal 1
-Source Code : [source](https://github.com/naminai/SoalShiftSISOP20_modul1_T06/master/soal1/soal1.sh)
+Source Code : [source](https://github.com/naminai/SoalShiftSISOP20_modul1_T06/blob/master/soal1/soal1.sh)
