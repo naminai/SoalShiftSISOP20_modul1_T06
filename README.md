@@ -7,18 +7,18 @@ Kelompok T06
 ---
 ## 
 * [Soal 1](#soal-1)
-  * [Soal 1.a.](#soal1-1a)
-  * [Soal 1.b.](#soal1-1b)
-  * [Soal 1.c.](#soal1-1c)
+  * [Soal 1.a](#soal1-1a)
+  * [Soal 1.b](#soal1-1b)
+  * [Soal 1.c](#soal1-1c)
 * [Soal 2](#soal-2)
-  * [Soal 2](#soal2-2a)
-  * [Soal 2](#soal2-2b)
-  * [Soal 2](#soal2-2c)
-  * [Soal 2](#soal2-2d)
+  * [Soal 2.a](#soal2-2a)
+  * [Soal 2.b](#soal2-2b)
+  * [Soal 2.c](#soal2-2c)
+  * [Soal 2.d](#soal2-2d)
 * [Soal 3](#soal-3)
-  * [Soal 3](#soal3-3a)
-  * [Soal 3](#soal3-3b)
-  * [Soal 3](#soal3-3c)
+  * [Soal 3.a](#soal3-3a)
+  * [Soal 3.b](#soal3-3b)
+  * [Soal 3.c](#soal3-3c)
 ---
 
 ## Soal 1
