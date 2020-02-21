@@ -93,6 +93,24 @@ Membuat crontab download file **setiap 8 jam dimulai dari jam 6.05 setiap hari k
 **"Pertanyaan"**\ 
 Membuat script untuk mengidentifikasi gambar yang identik dari keseluruhan gambar yang terdownload tadi. Bila terindikasi sebagai gambar yang identik, maka sisakan 1 gambar dan pindahkan sisa file identik tersebut ke dalam folder ./duplicate dengan format filename "duplicate_nomor". Setelah itu lakukan pemindahan semua gambar yang tersisa ke dalam folder ./kenangan dengan format filename "kenangan_nomor". Setelah tidak ada gambar di *current directory*, maka lakukan backup seluruh log menjadi ekstensi ".log.bak".
 
+**"Penyelesaian"**
+```bash
+#!/bin/bash
+display=`pwd`
+namber=`ls $display | grep "pdkt_kusuma" | cut -d "_" -f 3 |sort -n | tail -1`
+if [[ $namber =~ [0..9] ]]
+then
+  namber=0
+fi
+a=`expr $namber + 1` 
+b=`expr $namber + 28`
+for ((c=x; c<=y; c++ ))
+do
+     wget -a $display/wget.log -O "$display/pdkt_kusuma_$c" https://loremflickr.com/320/240/  
+done
+grep "Location" wget.log >> location.log
+```
+
  
  
  
