@@ -47,15 +47,15 @@ Pada suatu siang, laptop Randolf dan Afairuzr dibajak oleh seseorang dan kehilan
 
 **Soal 2(a)**\
  **"Pertanyaan"**\
- Membuat sebuah script bash yang dapat menghasilkan password secara acak sebanyak 28 karakter yang terdapat huruf besar, huruf kecil,  dan angka.
+ Membuat sebuah script bash yang dapat menghasilkan password secara acak sebanyak 28 karakter yang terdapat huruf besar, huruf kecil,  dan angka!
  
 **Soal 2(b)**\
  **"Pertanyaan"**\
- Password acak tersebut disimpan pada file berekstensi .txt dengan nama berdasarkan argumen yang diinputkan dan ***Hanya berupa alphabet***.
+ Password acak tersebut disimpan pada file berekstensi .txt dengan nama berdasarkan argumen yang diinputkan dan ***Hanya berupa alphabet***!
  
 **Soal 2(c)**\
  **"Pertanyaan"**\
- Kemudian supaya file .txt tersebut tidak mudah diketahui maka nama filenya akan di enkripsi dengan menggunakan konversi huruf ***string manipulation*** yang disesuaikan dengan jam ***0-23*** dibuatnya file tersebut dengan program terpisah menggunakan caesar cipher.
+ Kemudian supaya file .txt tersebut tidak mudah diketahui maka nama filenya akan di enkripsi dengan menggunakan konversi huruf ***string manipulation*** yang disesuaikan dengan jam ***0-23*** dibuatnya file tersebut dengan program terpisah menggunakan caesar cipher!
  
 ## Soal 3
 
