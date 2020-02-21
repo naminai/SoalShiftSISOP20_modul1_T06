@@ -36,7 +36,7 @@ Tentukan wilayah ***region*** mana yang memiliki keuntungan ***profit*** paling 
 Tampilkan 2 negara bagian ***state*** yang memiliki keuntungan ***profit*** paling sedikit berdasarkan hasil poin a!
 
 **Soal 1(c)**\
- **"Pertanyaan"**
+ **"Pertanyaan"**\
 Tampilkan 10 produk ***product name*** yang memiliki keuntungan ***profit*** paling sedikit berdasarkan 2 negara bagian ***state*** hasil poin b!
 
 
