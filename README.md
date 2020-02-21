@@ -29,15 +29,15 @@ Whits adalah seorang mahasiswa informatika. Dia mendapatkan tugas praktikum untu
 
 **Soal 1(a)**\
  ***Pertanyaan***\
-Tentukan wilayah(region) mana yang memiliki keuntungan(profit) paling sedikit
+Tentukan wilayah ***region*** mana yang memiliki keuntungan ***profit*** paling sedikit!
 
 **Soal 1(b)**\
  ***Pertanyaan***\
-Tampilkan 2 negara bagian(state) yang memiliki keuntungan(profit) paling sedikit berdasarkan hasil poin a
+Tampilkan 2 negara bagian ***state*** yang memiliki keuntungan ***profit*** paling sedikit berdasarkan hasil poin a!
 
 **Soal 1(c)**\
  ***Pertanyaan***\
-Tampilkan 10 produk(product name) yang memiliki keuntungan(profit) paling sedikit berdasarkan 2 negara bagian(state) hasil poin b
+Tampilkan 10 produk ***product name*** yang memiliki keuntungan ***profit*** paling sedikit berdasarkan 2 negara bagian ***state*** hasil poin b!
 
 
 
