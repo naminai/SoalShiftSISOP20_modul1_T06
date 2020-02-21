@@ -5,7 +5,7 @@ Kelompok T06
   * Made Krisnanda Utama (05311840000033)
   
 ---
-## Table of Contents
+## 
 * [Soal 1](#soal-1)
   * [Soal 1.a.](#soal1-1a)
   * [Soal 1.b.](#soal1-1b)
