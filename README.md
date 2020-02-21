@@ -7,7 +7,7 @@ Kelompok T06
 ---
 ## 
 * [Soal 1](#soal-1)
-  * [Soal 1.a](*soal1-1a)
+  * [Soal 1.a](#soal1-1a)
   * [Soal 1.b](#soal1-1b)
   * [Soal 1.c](#soal1-1c)
 * [Soal 2](#soal-2)
