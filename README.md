@@ -31,6 +31,12 @@ Whits adalah seorang mahasiswa informatika. Dia mendapatkan tugas praktikum untu
 **"Pertanyaan"**\
 Tentukan wilayah ***region*** mana yang memiliki keuntungan ***profit*** paling sedikit!
 
+```bash
+region=`awk -F "\t" 'NR>1{a[$13]+=$21}END{for (i in a)printf "%s\t%d\n", i, a[i] | "sort -nk2";}' Sample-Superstore.tsv`
+regional=`echo "$region" | awk '{NR==1}{print $1;exit}'` 
+echo -e "$regional\n"
+```
+
 ### Soal 1.b.
 **"Pertanyaan"**\
 Tampilkan 2 negara bagian ***state*** yang memiliki keuntungan ***profit*** paling sedikit berdasarkan hasil poin a!
