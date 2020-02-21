@@ -23,3 +23,7 @@ Kelompok T06
 
 ## Soal 1
 Source Code : [source](https://github.com/naminai/SoalShiftSISOP20_modul1_T06/tree/master/soal1)
+
+Deskripsi.
+Whits adalah seorang mahasiswa informatika. Dia mendapatkan tugas praktikum untuk membuat laporan berdasarkan data yang ada pada file “Sample-Superstore.tsv”. Namun dia tidak dapat menyelesaikan tugas tersebut. Laporan yang diminta berupa :
+
