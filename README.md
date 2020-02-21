@@ -27,6 +27,8 @@ Source Code : [source](https://github.com/naminai/SoalShiftSISOP20_modul1_T06/tr
 **Deskripsi**\
 Whits adalah seorang mahasiswa informatika. Dia mendapatkan tugas praktikum untuk membuat laporan berdasarkan data yang ada pada file “Sample-Superstore.tsv”. Namun dia tidak dapat menyelesaikan tugas tersebut. Laporan yang diminta berupa :
 
-**Soal 1(a)**\
+**Soal 1(a)**
+Tentukan wilayah(region) mana yang memiliki keuntungan(profit) paling sedikit
+
 
 
