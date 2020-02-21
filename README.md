@@ -68,6 +68,10 @@ Password acak tersebut disimpan pada file berekstensi .txt dengan nama berdasark
 ### Soal 2.c.
 **"Pertanyaan"**\
 Kemudian supaya file .txt tersebut tidak mudah diketahui maka nama filenya akan di enkripsi dengan menggunakan konversi huruf ***string manipulation*** yang disesuaikan dengan jam ***0-23*** dibuatnya file tersebut dengan program terpisah menggunakan caesar cipher!
+
+### Soal 2.d.
+**"Pertanyaan"**\
+jangan lupa untuk membuat dekripsinya supaya nama file bisa kembali.
  
 ## Soal 3
 
