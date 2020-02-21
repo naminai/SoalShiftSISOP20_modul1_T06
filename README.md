@@ -28,7 +28,7 @@ Source Code : [source](https://github.com/naminai/SoalShiftSISOP20_modul1_T06/tr
 Whits adalah seorang mahasiswa informatika. Dia mendapatkan tugas praktikum untuk membuat laporan berdasarkan data yang ada pada file “Sample-Superstore.tsv”. Namun dia tidak dapat menyelesaikan tugas tersebut. Laporan yang diminta berupa :
 
 **Soal 1(a)**\
- **"Permintaan"**\
+ **"Pertanyaan"**\
 Tentukan wilayah ***region*** mana yang memiliki keuntungan ***profit*** paling sedikit!
 
 **Soal 1(b)**\
@@ -36,7 +36,7 @@ Tentukan wilayah ***region*** mana yang memiliki keuntungan ***profit*** paling 
 Tampilkan 2 negara bagian ***state*** yang memiliki keuntungan ***profit*** paling sedikit berdasarkan hasil poin a!
 
 **Soal 1(c)**\
- **"Permintaan"**\
+ **"Pertanyaan"**\
 Tampilkan 10 produk ***product name*** yang memiliki keuntungan ***profit*** paling sedikit berdasarkan 2 negara bagian ***state***      hasil poin b!
 
 ## Soal 2
@@ -46,15 +46,15 @@ Source Code : [source](https://github.com/naminai/SoalShiftSISOP20_modul1_T06/tr
 Pada suatu siang, laptop Randolf dan Afairuzr dibajak oleh seseorang dan kehilangan data-data penting. Untuk mencegah kejadian yang sama terulang kembali mereka meminta bantuan kepada Whits karena dia adalah seorang yang punya banyak ide. Whits memikirkan sebuah ide namun dia meminta bantuan kalian kembali agar ide tersebut cepat diselesaikan.
 
 **Soal 2(a)**\
- **"Permintaan"**\
+ **"Pertanyaan"**\
  Membuat sebuah script bash yang dapat menghasilkan password secara acak sebanyak 28 karakter yang terdapat huruf besar, huruf kecil,  dan angka.
  
 **Soal 2(b)**\
- **"Permintaan"**\
+ **"Pertanyaan"**\
  Password acak tersebut disimpan pada file berekstensi .txt dengan nama berdasarkan argumen yang diinputkan dan ***Hanya berupa alphabet***.
  
 **Soal 2(c)**\
- **"Permintaan"**\
+ **"Pertanyaan"**\
  Kemudian supaya file .txt tersebut tidak mudah diketahui maka nama filenya akan di enkripsi dengan menggunakan konversi huruf ***string manipulation*** yang disesuaikan dengan jam ***0-23*** dibuatnya file tersebut dengan program terpisah menggunakan caesar cipher.
  
 ## Soal 3
