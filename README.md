@@ -40,6 +40,9 @@ regional=`echo "$region" | awk '{NR==1}{print $1;exit}'`
 echo -e "$regional\n"
 ```
 
+* Pada bagian `awk -F "\t" 'NR>1{a[$13]+=$21}END{for (i in a)printf "%s\t%d\n", i, a[i] | "sort -nk2";}' Sample-Superstore.tsv`
+ialah menjalankan perintah awk dengan
+
 ### Soal 1.b.
 **"Pertanyaan"**\
 Tampilkan 2 negara bagian ***state*** yang memiliki keuntungan ***profit*** paling sedikit berdasarkan hasil poin a!
