@@ -5,7 +5,7 @@ Kelompok T06
   * Made Krisnanda Utama (05311840000033)
   
 ---
-## 
+## Daftar Isi
 * [Soal 1](#soal-1)
   * [Soal 1.a.](#soal-1a)
   * [Soal 1.b.](#soal-1b)
@@ -61,7 +61,18 @@ Pada suatu siang, laptop Randolf dan Afairuzr dibajak oleh seseorang dan kehilan
 ### Soal 2.a.
 **Pertanyaan**\
 Membuat sebuah script bash yang dapat menghasilkan password secara acak sebanyak 28 karakter yang terdapat huruf besar, huruf kecil,  dan angka!
- 
+**Penyelesaian**\
+```bash
+
+#!/bin/bash
+
+Nama=$*
+Randomizer=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 28 | head -n 1)
+echo $Randomizer
+Kode=`printf '%s\n' "${Nama//[[:digit:]]/}"`
+echo $Randomizer >> $Kode.txt 
+```
+
 ### Soal 2.b.
 **Pertanyaan**\
 Password acak tersebut disimpan pada file berekstensi .txt dengan nama berdasarkan argumen yang diinputkan dan ***Hanya berupa alphabet***!
@@ -70,10 +81,42 @@ Password acak tersebut disimpan pada file berekstensi .txt dengan nama berdasark
 **Pertanyaan**\
 Kemudian supaya file .txt tersebut tidak mudah diketahui maka nama filenya akan di enkripsi dengan menggunakan konversi huruf ***string manipulation*** yang disesuaikan dengan jam ***0-23*** dibuatnya file tersebut dengan program terpisah menggunakan caesar cipher!
 
+**Pembahasan**\
+```bash
+#!/bin/bash
+
+args=$*
+arg=`basename $args .txt`  
+sword=`stat $args`
+ketupat=`echo -e "$sword"` 
+amboi=`echo $ketupat | awk 'BEGIN{IFS=";"}{print $15}'` 
+hebat=$(sudo debugfs -R 'stat <'$amboi'>' /dev/sda1 | awk '{if($1~/crtime/)print $7}')
+donee=`echo $hebat | awk -F: '{print $1}'`
+coba1=`echo "$arg" | caesar $donee` 
+mv $args $coba1.txt
+```
 ### Soal 2.d.
 **Pertanyaan**\
-jangan lupa untuk membuat dekripsinya supaya nama file bisa kembali.
- 
+Jangan lupa untuk membuat dekripsinya supaya nama file bisa kembali.
+
+**Pembahasan**\
+```bash
+#!/bin/bash
+
+args=$*
+arg=`basename $args .txt`  
+sword=`stat $args`
+ketupat=`echo -e "$sword"` 
+yasudah=`echo $ketupat | awk 'BEGIN{IFS=";"}{print $15}'` 
+hebat=$(sudo debugfs -R 'stat <'$yasudah'>' /dev/sda1 | awk '{if($1~/crtime/)print $7}')
+donee=`echo $hebat | awk -F: '{print $1}'`
+sepatu=$((10#$donee))
+senapan=$((10#26-$sepatu))
+#echo $senapan
+coba1=`echo "$arg" | caesar $senapan`  
+mv $args $coba1.txt
+```
+
 ## Soal 3
 Source Code : [source](https://github.com/naminai/SoalShiftSISOP20_modul1_T06/tree/master/soal3)
 
