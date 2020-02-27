@@ -42,7 +42,7 @@ echo -e "$regional\n"
 ```
 
 * Pada bagian `awk -F "\t" 'NR>1{a[$13]+=$21}END{for (i in a)printf "%s\t%d\n", i, a[i] | "sort -nk2";}' Sample-Superstore.tsv`
-ialah menjalankan perintah awk dengan
+ialah menjalankan perintah awk dengan option ```bash -F "\t"``` untuk melakukan separator dengan spasi, dikarenakan file berbentuk .tsv, dimana tab-separated value berarti setiap yang berarti delimiter yang digunakan adalah \t karena value-nya dipisah dengan tab. Kemudian pada pencarian awk ```bash NR>1{a[$13]+=$21}``` NR disini dimaksudkan sebagai Number of Record, dimana kita memulai pencarian diatas row pertama, yang merupakan judul dari masing-masing kolom. Kemudian kita memasukkan seluruh record di kolom ke 13 ke dalam array. Lalu, dari seluruh variabel unique yang ada di dalamnya, kita jumlahkan totalnya pada kolom 21, dimana kita bisa mengambil hasilnya dengan menggunakan ```bash {for (i in a)printf "%s\t%d\n", i, a[i]``` dan menunjukkan variabel i sebagai region, dan a[i] sebagai profit dari region. Kemudian, kita melakukan ```bash sort -nk2``` dimana kita melakukan sort berdasarkan nilai dari kolom ke 2 yang berarti profit dari region. Terakhir, kita melakukan awk terhadap region yang paling kecil profitnya dengan menggunakan new row pertama.
 
 ### Soal 1.b.
 **Pertanyaan**\
