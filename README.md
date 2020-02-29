@@ -276,6 +276,10 @@ done
 5.Melakukan download file dari  https://loremflickr.com/320/240/ dan membuat wget.log yang berisikan log file hasil download.
 `grep "Location" wget.log >> location.log` Melakukan grep semua line dengan isi Location pada `wget.log` ke `location.log`.
 
+Output: 
+
+![Output Soal 3 Fix 1](https://user-images.githubusercontent.com/61267430/75608533-d9df3d80-5b32-11ea-84e7-eb800e7bd19a.png)
+
 **3.b. Membuat crontab download file **setiap 8 jam dimulai dari jam 6.05 setiap hari kecuali hari sabtu**
 5 6-23/8 * * 0-5 bash home/donny/shift/soal3/soal3.sh
 
@@ -284,10 +288,6 @@ done
 3. kolom ketiga(day of month): * -> tanggal bebas
 4. kolom keempat(month): * -> bulan bebas
 5. kolom kelima(day of week): 0-5 -> setiap hari minggu sampai hari jumat (kecuali hari sabtu)
-
-Output: 
-
-![Output Soal 3 Fix 1](https://user-images.githubusercontent.com/61267430/75608533-d9df3d80-5b32-11ea-84e7-eb800e7bd19a.png)
 
 **3.c. Membuat script untuk mengidentifikasi gambar yang identik dari keseluruhan gambar yang terdownload tadi dan mengklasifikasikannya pada folder kenangan atau duplicate, lalu melakukan backup wget.log --> wget.log.bak**
 
