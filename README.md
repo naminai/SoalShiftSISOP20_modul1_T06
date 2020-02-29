@@ -242,7 +242,7 @@ Membuat script untuk mengidentifikasi gambar yang identik dari keseluruhan gamba
 
 **Penyelesaian**
 
-**3.a. Membuat script untuk mendownload 28 gambar dari "https://loremflickr.com/320/240/cat" menggunakan command wget dan menyimpan file dengan nama "pdkt_kusuma_NO" serta menyimpan log message wget kedalam sebuah file "wget.log" **
+**3.a. Membuat script untuk mendownload 28 gambar dari "https://loremflickr.com/320/240/cat" menggunakan command wget dan menyimpan file dengan nama "pdkt_kusuma_NO" serta menyimpan log message wget kedalam sebuah file "wget.log"**
  
 ```bash
 #!/bin/bash
