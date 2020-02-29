@@ -1,5 +1,5 @@
 # SoalShiftSISOP20_modul1_T06
-Penyelesain Soal Shift Modul 1 Sistem Operasi 2020\
+Penyelesaian Soal Shift Modul 1 Sistem Operasi 2020\
 Kelompok T06
   * Donny Kurnia Ramadhani (05311840000004)
   * Made Krisnanda Utama (05311840000033)
