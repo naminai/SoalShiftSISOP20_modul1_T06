@@ -280,7 +280,7 @@ Output:
 
 ![Output Soal 3 Fix 1](https://user-images.githubusercontent.com/61267430/75608533-d9df3d80-5b32-11ea-84e7-eb800e7bd19a.png)
 
-**3.b. Membuat crontab download file **setiap 8 jam dimulai dari jam 6.05 setiap hari kecuali hari sabtu**
+**3.b. Membuat crontab download file setiap 8 jam dimulai dari jam 6.05 setiap hari kecuali hari sabtu**
 
 5 6-23/8 * * 0-5 /bin/bash home/donny/shift/soal3/soal3.sh
 
