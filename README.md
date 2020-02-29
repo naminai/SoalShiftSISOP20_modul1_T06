@@ -24,15 +24,15 @@ Kelompok T06
 ## Soal 1
 Source Code : [source](https://github.com/naminai/SoalShiftSISOP20_modul1_T06/tree/master/soal1)
 
-**Deskripsi**\
+**Deskripsi**
 Whits adalah seorang mahasiswa informatika. Dia mendapatkan tugas praktikum untuk membuat laporan berdasarkan data yang ada pada file “Sample-Superstore.tsv”. Namun dia tidak dapat menyelesaikan tugas tersebut. Laporan yang diminta berupa :
 
 ### Soal 1.a.
 
-**Pertanyaan**\
+**Pertanyaan**
 Tentukan wilayah ***region*** mana yang memiliki keuntungan ***profit*** paling sedikit!
 
-**Pembahasan**\
+**Pembahasan**
 Menentukan keuntungan paling sedikit, ialah menggunakan command `awk`.
 
 ```bash
@@ -45,25 +45,42 @@ echo -e "$regional\n"
 ialah menjalankan perintah awk dengan option ```bash -F "\t"``` untuk melakukan separator dengan spasi, dikarenakan file berbentuk .tsv, dimana tab-separated value berarti setiap yang berarti delimiter yang digunakan adalah \t karena value-nya dipisah dengan tab. Kemudian pada pencarian awk ```bash NR>1{a[$13]+=$21}``` NR disini dimaksudkan sebagai Number of Record, dimana kita memulai pencarian diatas row pertama, yang merupakan judul dari masing-masing kolom. Kemudian kita memasukkan seluruh record di kolom ke 13 ke dalam array. Lalu, dari seluruh variabel unique yang ada di dalamnya, kita jumlahkan totalnya pada kolom 21, dimana kita bisa mengambil hasilnya dengan menggunakan ```bash {for (i in a)printf "%s\t%d\n", i, a[i]``` dan menunjukkan variabel i sebagai region, dan a[i] sebagai profit dari region. Kemudian, kita melakukan ```bash sort -nk2``` dimana kita melakukan sort berdasarkan nilai dari kolom ke 2 yang berarti profit dari region. Terakhir, kita melakukan awk terhadap region yang paling kecil profitnya dengan menggunakan new row pertama.
 
 ### Soal 1.b.
-**Pertanyaan**\
+**Pertanyaan**
 Tampilkan 2 negara bagian ***state*** yang memiliki keuntungan ***profit*** paling sedikit berdasarkan hasil poin a!
+```bash 
+echo "State dari Region Central dengan profit paling sedikit adalah: "
+state=`awk -F "\t" -v a="$regional" 'NR>1 {if(match($13, a))arr[$11]+=$NF}END{for (i in arr) printf "%s\t%d\n", i, arr[i]}' Sample-Superstore.tsv  | sort -nk2 | awk -F "," 'FNR <3 {printf "%s\n",$1}'` 
+stational=`echo "$state" | awk '{NR==1}{print $1}'`
+stationbalapan=`echo $stational | awk '{NR==1}{print $1}'`
+echo $stationbalapan
+stationpurabaya=`echo $stationall | awk '{NR==1}{print $2}'`
+echo -e "$stationpurabaya\n" 
+```
 
 ### Soal 1.c.
-**Pertanyaan**\
+**Pertanyaan**
 Tampilkan 10 produk ***product name*** yang memiliki keuntungan ***profit*** paling sedikit berdasarkan 2 negara bagian ***state***      hasil poin b!
+```bash
+#C
+echo "Produk dari State Texas dengan profit paling sedikit adalah: "
+productkawe=`awk -F "\t" -v b="$stationbalapan" 'NR>1 {if(match($11, b))arr[$17]+=$21}END{for (i in arr) printf "%f\t%s\n", arr[i], i}' Sample-Superstore.tsv | sort -n | awk -F, 'FNR <11 {printf "%s\n", $1}' | cut -f2-  `
+echo -e "$productkawe\n" 
+echo "Produk dari State Illinois dengan profit paling sedikit adalah: "
+productgagal=`awk -F "\t" -v c="$stationpurabaya" 'NR>1 {if(match($11, c))arr[$17]+=$21}END{for (i in arr) printf "%f\t%s\n", arr[i], i}' Sample-Superstore.tsv | sort -n | awk -F, 'FNR <11 {printf "%s\n", $1}' | cut -f2- ` 
+echo -e "$productgagal\n"
+```
 
 ## Soal 2
 Source Code : [source](https://github.com/naminai/SoalShiftSISOP20_modul1_T06/tree/master/soal2)
 
-**Deskripsi**\
+**Deskripsi**
 Pada suatu siang, laptop Randolf dan Afairuzr dibajak oleh seseorang dan kehilangan data-data penting. Untuk mencegah kejadian yang sama terulang kembali mereka meminta bantuan kepada Whits karena dia adalah seorang yang punya banyak ide. Whits memikirkan sebuah ide namun dia meminta bantuan kalian kembali agar ide tersebut cepat diselesaikan.
 
 ### Soal 2.a.
-**Pertanyaan**\
+**Pertanyaan**
 Membuat sebuah script bash yang dapat menghasilkan password secara acak sebanyak 28 karakter yang terdapat huruf besar, huruf kecil,  dan angka!
-**Penyelesaian**\
+**Penyelesaian**
 ```bash
-
 #!/bin/bash
 
 Nama=$*
@@ -74,14 +91,14 @@ echo $Randomizer >> $Kode.txt
 ```
 
 ### Soal 2.b.
-**Pertanyaan**\
+**Pertanyaan**
 Password acak tersebut disimpan pada file berekstensi .txt dengan nama berdasarkan argumen yang diinputkan dan ***Hanya berupa alphabet***!
  
 ### Soal 2.c.
-**Pertanyaan**\
+**Pertanyaan**
 Kemudian supaya file .txt tersebut tidak mudah diketahui maka nama filenya akan di enkripsi dengan menggunakan konversi huruf ***string manipulation*** yang disesuaikan dengan jam ***0-23*** dibuatnya file tersebut dengan program terpisah menggunakan caesar cipher!
 
-**Pembahasan**\
+**Pembahasan**
 ```bash
 #!/bin/bash
 
@@ -96,10 +113,10 @@ coba1=`echo "$arg" | caesar $donee`
 mv $args $coba1.txt
 ```
 ### Soal 2.d.
-**Pertanyaan**\
+**Pertanyaan**
 Jangan lupa untuk membuat dekripsinya supaya nama file bisa kembali.
 
-**Pembahasan**\
+**Pembahasan**
 ```bash
 #!/bin/bash
 
@@ -126,18 +143,18 @@ selalu menghibur Kusuma, jadi gambar yang telah terkirim tadi akan kalian simpan
 Hint : Gunakan wget.log untuk membuat location.log yang isinya merupakan hasil dari grep “Location”. Gunakan Bash, Awk dan Crontab
 
 ### Soal 3.a
-**Pertanyaan**\
+**Pertanyaan**
 Membuat script untuk mendownload 28 gambar dari "https://loremflickr.com/320/240/cat" menggunakan command **wget** dan menyimpan file dengan nama "pdkt_kusuma_NO" serta menyimpan **log message wget** kedalam sebuah file "wget.log"
 
 ### Soal 3.b
-**Pertanyaan**\ 
+**Pertanyaan** 
 Membuat crontab download file **setiap 8 jam dimulai dari jam 6.05 setiap hari kecuali hari sabtu**
 
 ### Soal 3.c
-**Pertanyaan**\ 
+**Pertanyaan** 
 Membuat script untuk mengidentifikasi gambar yang identik dari keseluruhan gambar yang terdownload tadi. Bila terindikasi sebagai gambar yang identik, maka sisakan 1 gambar dan pindahkan sisa file identik tersebut ke dalam folder ./duplicate dengan format filename "duplicate_nomor". Setelah itu lakukan pemindahan semua gambar yang tersisa ke dalam folder ./kenangan dengan format filename "kenangan_nomor". Setelah tidak ada gambar di *current directory*, maka lakukan backup seluruh log menjadi ekstensi ".log.bak".
 
-**Penyelesaian**\
+**Penyelesaian**
 ```bash
 #!/bin/bash
 display=`pwd`
