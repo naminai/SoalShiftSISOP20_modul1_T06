@@ -16,12 +16,8 @@ stationpurabaya=`echo $stational | awk '{NR==1}{print $2}'`
 echo -e "$stationpurabaya\n"
 
 #C
-echo "Produk dari State Texas dengan profit paling sedikit adalah: "
-productkawe=`awk -F "\t" -v b="$stationbalapan" 'NR>1 {if(match($11, b))arr[$17]+=$21}END{for (i in arr) printf "%f\t%s\n", arr[i], i}' Sample-Superstore.tsv | sort -n | awk -F, 'FNR <11 {printf "%s\n", $1}' | cut -f2-  `
-echo -e "$productkawe\n" 
-echo "Produk dari State Illinois dengan profit paling sedikit adalah: "
-productgagal=`awk -F "\t" -v c="$stationpurabaya" 'NR>1 {if(match($11, c))arr[$17]+=$21}END{for (i in arr) printf "%f\t%s\n", arr[i], i}' Sample-Superstore.tsv | sort -n | awk -F, 'FNR <11 {printf "%s\n", $1}' | cut -f2- ` 
-echo -e "$productgagal\n"
+productkawe=`awk -F "\t" -v b="$stationbalapan" 'NR>1 {if(match($11, b))arr[$17]+=$21}END{for (i in arr) printf "%f\t%s\n", arr[i], i}' Sample-Superstore.tsv # | sort -n | awk -F, 'FNR <11 {printf "%s\n", $1}' | cut -f2-  `
+productgagal=`awk -F "\t" -v c="$stationpurabaya" 'NR>1 {if(match($11, c))arr[$17]+=$21}END{for (i in arr) printf "%f\t%s\n", arr[i], i}' Sample-Superstore.tsv # | sort -n | awk -F, 'FNR <11 {printf "%s\n", $1}' | cut -f2- ` 
 
-
-
+echo "Produk dari State Texas dan Illinois dengan profit paling sedikit adalah: "
+echo -e "$productkawe$productgagal" | sort -n | awk -F, 'FNR <11 {printf "%s\n", $1}' | cut -f2-
