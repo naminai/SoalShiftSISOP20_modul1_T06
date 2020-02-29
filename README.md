@@ -102,23 +102,7 @@ echo -e "$productkawe$productgagal" | sort -n | awk -F, 'FNR <11 {printf "%s\n",
 6. `sort -n | awk -F, 'FNR <11 {printf "%s\n", $1}' | cut -f2-` Melakukan print terhadap 10 produk dengan keuntungan terkecil.
 
 Output:
-<pre><code>Region dengan profit paling sedikit adalah: 
-Central
-State dari Region Central dengan profit paling sedikit adalah: 
-Texas 
-Illinois
-Produk dari State Texas dan Illinois dengan profit paling sedikit adalah:
-GBC DocuBind P400 Electric Binding System
-Fellowes PB500 Electric Punch Plastic Comb Binding Machine with Manual Bind
-Ibico EPK-21 Electric Binding System
-Lexmark MX611dhe Monochrome Laser Printer
-Ibico Hi-Tech Manual Binding System
-GBC DocuBind TL300 Electric Binding System
-3.6 Cubic Foot Counter Height Office Refrigerator
-Hoover Upright Vacuum With Dirt Cup
-GBC ProClick 150 Presentation Binding System
-GBC Ibimaster 500 Manual ProClick Binding System
-</code></pre>
+![Soal 1 Output Fix](https://user-images.githubusercontent.com/61267430/75608302-f2e6ef00-5b30-11ea-9555-dcaacc238034.png)
 
 ## Soal 2
 Source Code : [source](https://github.com/naminai/SoalShiftSISOP20_modul1_T06/tree/master/soal2)
@@ -225,6 +209,10 @@ mv $args $coba1.txt
 9. `caesar $senapan` Melakukan caesar cipher dengan command caesar dan mendekripsi filename.
 10. `mv $args $coba1.txt` Rename filename menjadi nama file terdekripsi.
 
+Output: 
+
+![Output Soal 2 Fix](https://user-images.githubusercontent.com/61267430/75608434-f29b2380-5b31-11ea-97b1-7693c7bb683c.png)
+
 ## Soal 3
 Source Code : [source](https://github.com/naminai/SoalShiftSISOP20_modul1_T06/tree/master/soal3)
 
@@ -297,6 +285,10 @@ done
 4. kolom keempat(month): * -> bulan bebas
 5. kolom kelima(day of week): 0-5 -> setiap hari minggu sampai hari jumat (kecuali hari sabtu)
 
+Output: 
+
+![Output Soal 3 Fix 1](https://user-images.githubusercontent.com/61267430/75608533-d9df3d80-5b32-11ea-84e7-eb800e7bd19a.png)
+
 **3.c. Membuat script untuk mengidentifikasi gambar yang identik dari keseluruhan gambar yang terdownload tadi dan mengklasifikasikannya pada folder kenangan atau duplicate, lalu melakukan backup wget.log --> wget.log.bak**
 
 ```bash
@@ -346,3 +338,8 @@ else
 ```
 
 11. Melakukan concatenation $lokasi kepada $arr sebagai tracker untuk file berikutnya, dimana lokasi akan menjadi penentu apabila file merupakan duplikat atau tidak. Lalu memasukkan file unique ke folder kenangan, serta menambah counter y agar nama file menjadi kenangan_1, kenangan_2, dan seterusnya.
+12. `cat $dirinfo/wget.log >> $dirinfo/wget.log.bak && rm $dirinfo/wget.log` Memindahkan isi wget.log ke wget.log.bak untuk backup dan menghapus wget.log.
+
+Output:
+
+![Output Soal 3 Fix 2](https://user-images.githubusercontent.com/61267430/75608535-dba90100-5b32-11ea-90cb-320ce8c48fc3.png)
