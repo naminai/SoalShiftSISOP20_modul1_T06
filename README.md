@@ -282,7 +282,7 @@ Output:
 
 **3.b. Membuat crontab download file setiap 8 jam dimulai dari jam 6.05 setiap hari kecuali hari sabtu**
 
-5 6-23/8 * * 0-5 /bin/bash home/donny/shift/soal3/soal3.sh
+`5 6-23/8 * * 0-5 /bin/bash home/donny/shift/soal3/soal3.sh`
 
 1. kolom pertama (minute): 5 -> setiap menit ke-5
 2. kolom kedua (hour): 6-23/8 -> setiap 8 jam dari jam 6 sampai jam 23
